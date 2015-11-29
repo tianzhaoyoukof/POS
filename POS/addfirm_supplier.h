@@ -14,7 +14,7 @@ class AddFirm_Supplier : public QDialog
     Q_OBJECT
 
 public:
-    explicit AddFirm_Supplier(QWidget *parent = 0);;
+    explicit AddFirm_Supplier(QWidget *parent = 0);
     ~AddFirm_Supplier();
 
 private slots:
