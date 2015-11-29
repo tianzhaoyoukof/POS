@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PurchaseForm</class>
+ <widget class="QWidget" name="PurchaseForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>700</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>700</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>原有商品进货</string>
+    </attribute>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>140</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条形码或商品名</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="barPurchase_LEdit">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>140</y>
+       <width>181</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="numPurchase_SBox">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>180</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>180</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进货数量</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sure_Btn_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>230</y>
+       <width>91</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进货</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>添加新商品</string>
+    </attribute>
+    <widget class="QPushButton" name="addKind_Btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>350</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加分类</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delKind_Btn">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>390</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除分类</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="kind_LWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>101</width>
+       <height>321</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>0</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>商品分类</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>10</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>商品名称</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name_LEdit">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>10</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="bar_LEdit">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>181</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>10</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条形码</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="rPrice">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>50</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="wPrice">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>50</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="pPrice">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>50</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>50</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>零售价</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>50</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>批发价</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>50</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>促销价</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="iPrice">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>50</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <double>0.010000000000000</double>
+     </property>
+     <property name="maximum">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>50</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进货价</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>起促销日期</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>90</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>止促销日期</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="num_SBox">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>130</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>130</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进货数量</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>130</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>库存报警数量</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="lnum_SBox">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>130</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="innum_SBox">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>130</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="minimum">
+      <number>1</number>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+     <property name="value">
+      <number>10</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>130</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>计划进货数</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="sellable_CBox">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>130</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>可以销售</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="sDate_DEdit">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>90</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="eDate_DEdit">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>90</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>170</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>厂商编号</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>170</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>供应商编号</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="firm_LWidget">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>190</y>
+       <width>101</width>
+       <height>201</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="supplier_LWidget">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>190</y>
+       <width>101</width>
+       <height>201</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sure_Btn">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>340</y>
+       <width>75</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>进货</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addFirm_Btn">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>400</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加厂商</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delFirm_Btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>400</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除厂商</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addSupplier_Btn">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>400</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>添加供应商</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delSupplier_Btn">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>400</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除供应商</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>清除商品</string>
+    </attribute>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>110</y>
+       <width>201</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>输入条形码或商品号：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="barDEL_LEdit">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>170</y>
+       <width>181</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sure_Btn_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>210</y>
+       <width>75</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>清货</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>进货单</string>
+    </attribute>
+    <widget class="QTableView" name="stock_TView">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>641</width>
+       <height>351</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>数量</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sortNUM">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>69</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>升序</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>降序</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>数量排序</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sortUNIT">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>69</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>升序</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>降序</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>单价排序</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="sortALL">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>20</y>
+       <width>69</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>升序</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>降序</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>20</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>总价排序</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="sort_Btn">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>20</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>排序</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

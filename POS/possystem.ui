@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>POSSystem</class>
+ <widget class="QMainWindow" name="POSSystem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="retail_Btn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>商品零售</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wholesale_Btn">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>商品批发</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="returnGood_Btn">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>顾客退货</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="VIP_Btn">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>会员登记</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="purchase_Btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>进货管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sell_Btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>销售管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stock_Btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>库存管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="person_Btn">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>10</y>
+      <width>90</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>人员管理</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="w" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>700</width>
+      <height>450</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>用户：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="user_Label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>WANG</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuKaishi">
+    <property name="title">
+     <string>开始</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuKaishi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
